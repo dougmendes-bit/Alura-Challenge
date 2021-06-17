@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura Challenger</title>
+    <link rel="stylesheet" href="dracula.css">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="script.js">
+    <link rel="stylesheet" href="style__menuHam.css">
+
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="imagens/logo.png" alt="" class="logo">
+    
+            <input type="text" class="barraDePesquisa" placeholder="Busque por algo">
+
+            <div class="imagemPerfil">
+                <img src="imagens/Photo.png" alt="">
+                <a href="">Harry</a>
+            </div>
+            <div class="lupaBarra">
+                <img src="imagens/lupa.svg" alt="" class="headerLupa">
+                <img src="imagens/barra.svg" alt="" class="headerBarra" onclick="vamosla()">
+            </div>
+            
+        </div>
+    </header>  
+    
+    <main>
+
+        <div class="menu__ham">
+            <nav>
+                <ul>
+                    <li><a href="index.html"><img src="imagens/vector1.png" class="menuIconess" alt="">Editor de Códigos</a></li>
+                    <li><a href="pagina2.html"><img src="imagens/Vector.png" class="menuIconess" alt="">Comunidade</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <div class="menu__ham__fotoPerfil">
+                <img src="imagens/Photo.png" alt="">
+                <p>Harry</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="menu">
+                <p>Menu</p>
+
+                <ul>
+                    <li><img src="imagens/vector1.png" alt=""><a href="index.html">Editor de código</a></li>
+                    <li><img src="imagens/Vector.png" alt=""><a href="pagina2.html">Comunidade</a></li>
+                </ul>
+
+            </div>
+
+            <div class="outrocontainer">
+                <div class="containerEditor" data-container-editor>
+                    <div class="areaDoCodigo">
+                        <img src="imagens/Ellipse 1.png" alt="">
+                        <img src="imagens/Ellipse 2.png" alt="">
+                        <img src="imagens/Ellipse 3.png" alt="">
+
+                    </div>
+                    <div class="codigo-wrapper">
+                        <pre><code class="hljs" contenteditable='true' name="EditorDeCodigo" id="" cols="30" rows="10" data-code area-label="editor"></code></pre>
+                    </div>
+
+                </div>
+                <input type="button" value="Visualizar Highlight" class="botaoHighlight">
+            </div>
+
+            <div class="menuEsquerdo">
+                <div class="seuProjeto">
+                    <p>Seu Projeto</p>
+                    <input type="text" name="" id="" placeholder="Nome do seu projeto" class="projetoNome">
+                    <input type="text" name="" id="" class="projetoDescriçao" placeholder="Descrição do seu projeto">
+                </div>
+                <div class="personalizaçao">
+                    <p>Personalização</p>
+                    <select name="linguagem" id="lingaguem">
+                        <option value="javascript">JavaScript</option>
+                        <option value="html">HTML</option>
+                        <option value="css">CSS</option>
+                    </select>
+                    <input type="color" name="" id="" class="selecionadorDeCor" data-input-color onchange="changeColor()">
+                    <input type="button" value="Salvar Projeto" class="botaoSalvarProjeto">
+                </div>
+
+            </div>
+        </div>
+        <script src="script.js"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/highlight.js/10.7.2/highlight.min.js"></script>
+    </main>
+</body>
+</html>

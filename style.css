@@ -1,0 +1,461 @@
+
+*{
+    margin: 0;
+    padding: 0;
+
+}
+
+body{
+    background: #051D3B;
+    font-family: 'Inter', sans-serif;
+    ;
+}
+
+
+/* HEADER */
+
+header .container{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    height: 100px;
+    width: 98%;
+    margin: 0 auto;
+
+}
+
+.logo{
+    height: 70%;
+    
+}
+
+.barraDePesquisa{
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+    border: none;
+    height: 50px;
+    width: 750px;
+    box-sizing: border-box;
+    padding: 0px 14px;
+    color: white;
+    margin-right: 20px;
+    
+    
+}
+
+.barraDePesquisa:hover{
+    background: rgba(255, 255, 255, 0.24);
+}
+
+.imagemPerfil{
+    display: flex;
+    align-items: center;
+    margin-right: 2%;
+}
+
+.imagemPerfil a{
+    margin-left: 10px;
+    text-decoration: none;
+    color: white;
+
+}
+
+.headerLupa, .headerBarra{
+    display: none;
+}
+
+/* MAIN */
+
+/* MENU ESQUERDO */
+
+main .container{
+    width: 98%;
+    margin:  auto;
+    
+    display: flex;
+    height: 600px;
+    justify-content: space-between;
+
+}
+
+.menu{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    margin-left: 1%;
+    width: 20%;
+}
+
+.menu p{
+    text-transform: uppercase;
+    font-size: 12px;
+    
+}
+
+.menu ul{
+    list-style: none;
+    
+}
+
+.menu li{
+    display: flex;
+    align-items: center;
+
+}
+
+.menu li img{
+    margin-right: 5%;
+    background: #5081FB;
+    padding: 10px 10px;
+    border-radius: 8px;
+}
+
+.menu li a{
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    line-height: 60px;
+}
+
+/* AREA PRINCIPAL */
+
+.outrocontainer{
+    display: flex;
+    flex-direction: column;
+    width: 60%;
+   
+}
+
+.containerEditor{
+    width: 90%;
+    margin: 0 auto;
+    height: 350px;
+    background: black;
+    display: flex;
+    flex-direction: column;
+    border:#6BD1FF 20px solid;
+    border-radius: 8px;
+}
+
+.areaDoCodigo{
+    padding: 16px;
+}
+
+.containerEditor code{
+    width: 90%;
+    margin: 0 auto;
+    height: 75%;
+    background: black;
+    outline: none;
+    resize: none;
+    color: white;
+    padding: 16px;
+    border: black;
+    display: block;
+    white-space: pre-wrap;
+    overflow-y:auto;    
+}
+
+.botaoHighlight{
+    width: 96%;
+    margin: 0 auto;
+    background: #5081FB14;
+    color: white;
+    border: none;
+    padding: 16px;
+    border-radius: 8px;
+    text-align: center;
+    font-size: 16px;
+    margin-top: 3%;
+    
+
+
+}
+
+.botaoHighlight:hover{
+    cursor: pointer;
+    background: rgba(80, 129, 251, 0,16);
+
+}
+
+
+/* MENU LATERAL ESQUERDO */
+
+.menuEsquerdo{
+    display: flex;
+    flex-direction: column;
+    
+}
+
+.seuProjeto{
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    
+    
+}
+
+.seuProjeto p{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+.seuProjeto .projetoNome{
+    padding: 15px;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+    border: none;
+    margin: 10% 0;
+}
+
+.projetoNome:hover{
+    background: rgba(255, 255, 255, 0.24);
+}
+
+.projetoDescriçao{
+    padding: 25px;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+    border: none;
+}
+
+.projetoDescriçao:hover{
+    background: rgba(255, 255, 255, 0.24);
+}
+
+.personalizaçao{
+    display: flex;
+    flex-direction: column;
+}
+
+.personalizaçao p{
+    color: white;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    font-size: 14px;
+}
+
+/*  AREA DE PERSONALIZAÇÃO */
+
+.personalizaçao select{
+    padding: 15px 10px;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+    border: none;
+    color: white;
+    opacity: 0.5;
+}
+
+select:hover{
+    background: rgba(255, 255, 255, 0.24);
+}
+
+
+.personalizaçao p{
+    margin: 10% 0;
+}
+
+.selecionadorDeCor{
+    width: 96%;
+    height: 45px;
+    padding: 2%;
+    background: rgba(255, 255, 255, 0.16);
+    border-radius: 8px;
+    border: none;
+    color: white;
+    margin: 5% 0;
+}
+
+.selecionadorDeCor:hover{
+    background: rgba(255, 255, 255, 0.24);
+}
+
+.botaoSalvarProjeto{
+    padding: 15px 10px;
+    border-radius: 8px;
+    border: none;
+    color: black;
+    background: #5081FB;
+    border-radius: 8px;
+}
+
+
+.botaoSalvarProjeto:hover{
+    cursor: pointer;
+    background: rgba(123, 164, 252, 1);
+
+}
+.botaoSalvarProjeto:active{
+    border: 4px solid rgba(80, 129, 251, 0.72);
+    border-radius: 8px;
+}
+
+/* CELULAR */
+@media (max-width:767px){
+    
+    body{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+   .logo{
+       width: 50%;
+       max-width: 200px;
+   }
+   .barraDePesquisa{
+       display: none;
+   }
+
+   .imagemPerfil{
+       display: none;
+   }
+
+    .lupaBarra{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 20%;
+    }
+
+   .headerBarra, .headerLupa{
+       display: initial;
+       width: 100%;
+       max-width: 30px;
+   }
+
+   main .container{
+       flex-direction: column;
+   }
+
+   .outrocontainer{
+       width: 100%;
+       margin: 0 auto;
+       order: -1;
+   }
+ 
+   .personalização{
+       margin: 0 0;
+   }
+   .seuProjeto{
+       margin: 0 0;
+   }
+
+   .menu p{
+       margin-top: 30px;
+   }
+
+   .menu{
+       width: 100%;
+       margin-bottom: 30px;
+       display: none;
+   }
+
+   .menuEsquerdo{
+       margin-top: 30px;
+   }
+
+   .containerEditor textarea{
+       width: 80%;
+   }
+   
+   .personalizaçao{
+       margin-bottom: 20px;
+   }
+   
+   .botaoHighlight{
+       width: 100%;
+   }
+
+}
+
+/* TABLET */
+@media (min-width:768px) and (max-width:1050px){
+    
+    body{
+        width: 90%;
+        margin: 0 auto;
+    }
+
+
+   .logo{
+       width: 50%;
+       max-width: 200px;
+   }
+   
+
+   .imagemPerfil{
+       display: none;
+   }
+
+   .headerBarra{
+       display: initial;
+       width: 100%;
+       max-width: 30px;
+   }
+
+   main .container{
+       flex-direction: column;
+   }
+
+   .outrocontainer{
+       width: 100%;
+       margin: 0 auto;
+       order: -1;
+   }
+ 
+
+   .seuProjeto{
+       margin: 0 0;
+   }
+
+   .menu p{
+       margin-top: 30px;
+   }
+
+   .menu{
+       width: 100%;
+       margin-bottom: 30px;
+       display: none;
+   }
+
+   .menuEsquerdo{
+       margin-top: 30px;
+   }
+
+   .containerEditor textarea{
+       width: 80%;
+   }
+   
+   .personalizaçao{
+       margin-bottom: 20px;
+       flex-direction: row;
+       flex-wrap: wrap;
+   }
+
+   .personalizaçao p{
+       width: 100%;
+   }
+
+   .personalizaçao select{
+       width: 45%;
+       margin-right: 40px;
+       height: 75px;
+      align-self: center;
+   }
+
+   .selecionadorDeCor{
+       width: 45%;
+   }
+   
+   .botaoHighlight{
+       width: 100%;
+   }
+
+   .botaoSalvarProjeto{
+       width: 100%;
+   }
+
+}

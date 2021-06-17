@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Alura - Comunidade</title>
+    <link rel="stylesheet" href="style2.css">
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@200&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style__menuHam.css">
+    <script src="script.js"></script>
+</head>
+<body>
+    <header>
+        <div class="container">
+            <img src="imagens/logo.png" alt="" class="logo">
+    
+            <input type="text" class="barraDePesquisa" placeholder="Busque por algo">
+
+            <div class="imagemPerfil">
+                <img src="imagens/Photo.png" alt="">
+                <a href="">Harry</a>
+            </div>
+            <div class="lupaBarra">
+                <img src="imagens/lupa.svg" alt="" class="headerLupa">
+                <img src="imagens/barra.svg" alt="" class="headerBarra" onclick="vamosla()">
+            </div>
+            
+        </div>
+    </header>  
+    
+    <main>
+
+        <div class="menu__ham">
+            <nav>
+                <ul>
+                    <li><a href="index.html"><img src="imagens/vector1.png" class="menuIconess" alt="">Editor de Códigos</a></li>
+                    <li><a href="pagina2.html"><img src="imagens/Vector.png" class="menuIconess" alt="">Comunidade</a></li>
+                </ul>
+            </nav>
+            <hr>
+            <div class="menu__ham__fotoPerfil">
+                <img src="imagens/Photo.png" alt="">
+                <p>Harry</p>
+            </div>
+        </div>
+
+        <div class="container">
+            <div class="menu">
+                <p>Menu</p>
+
+                <ul>
+                    <li><img src="imagens/vector1.png" alt=""><a href="index.html">Editor de código</a></li>
+                    <li><img src="imagens/Vector.png" alt="" ><a href="pagina2.html">Comunidade</a></li>
+                </ul>
+
+            </div>
+
+            <div class="containerEditores">
+                <div class="editoresComentarios" onmouseover="abrirJanela1()" onmouseout="fecharJanela1()">
+                    <div class="editor">
+                        <div class="imagensEditor">
+                            <img src="imagens/Ellipse 1.png" alt="">
+                            <img src="imagens/Ellipse 2.png" alt="">
+                            <img src="imagens/Ellipse 3.png" alt="">
+                        </div>
+
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="comentarios">
+                        <div class="emoteMargin">aaaa</div>
+
+                        <h2>Titulo</h2>
+
+                        <p>Descrição</p>
+
+                        <div class="emotes" data-form>
+                            <div class="balaoLikes">
+                                <div class="emotinhos">
+                                    <img src="imagens/balao.svg" alt="">
+                                    <p class="paragrafoMagico" >9</p>
+                                </div>
+                                <div class="emotinhos2">
+                                    <img src="imagens/likes.svg" alt="" data-like onclick="changeColor()">
+                                    <p >8</p>
+                                </div>
+                            </div>
+                            <div class="fotoPerfil">
+                                <img src="imagens/Photo.png" alt="">
+                                <p>Harry</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="editoresComentarios" onmouseover="abrirJanela2()" onmouseout="fecharJanela2()">
+                    <div class="editor">
+                        <div class="imagensEditor">
+                            <img src="imagens/Ellipse 1.png" alt="">
+                            <img src="imagens/Ellipse 2.png" alt="">
+                            <img src="imagens/Ellipse 3.png" alt="">
+                        </div>
+
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="comentarios">
+                        <div class="emoteMargin">aaaa</div>
+
+                        <h2>Titulo</h2>
+
+                        <p>Descrição</p>
+
+                        <div class="emotes" data-form2 >
+                            <div class="balaoLikes">
+                                <div class="emotinhos">
+                                    <img src="imagens/balao.svg" alt="">
+                                    <p class="paragrafoMagico" >9</p>
+                                </div>
+                                <div class="emotinhos2">
+                                    <img src="imagens/likes.svg" alt="" data-like onclick="changeColor()">
+                                    <p >8</p>
+                                </div>
+                            </div>
+                            <div class="fotoPerfil">
+                                <img src="imagens/Photo.png" alt="">
+                                <p>Harry</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="editoresComentarios" onmouseover="abrirJanela3()" onmouseout="fecharJanela3()">
+                    <div class="editor">
+                        <div class="imagensEditor">
+                            <img src="imagens/Ellipse 1.png" alt="">
+                            <img src="imagens/Ellipse 2.png" alt="">
+                            <img src="imagens/Ellipse 3.png" alt="">
+                        </div>
+
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="comentarios">
+                        <div class="emoteMargin">aaaa</div>
+
+                        <h2>Titulo</h2>
+
+                        <p>Descrição</p>
+
+                        <div class="emotes" data-form3 >
+                            <div class="balaoLikes">
+                                <div class="emotinhos">
+                                    <img src="imagens/balao.svg" alt="">
+                                    <p class="paragrafoMagico" >9</p>
+                                </div>
+                                <div class="emotinhos2">
+                                    <img src="imagens/likes.svg" alt="" data-like onclick="changeColor()">
+                                    <p >8</p>
+                                </div>
+                            </div>
+                            <div class="fotoPerfil">
+                                <img src="imagens/Photo.png" alt="">
+                                <p>Harry</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+
+                <div class="editoresComentarios" onmouseover="abrirJanela4()" onmouseout="fecharJanela4()">
+                    <div class="editor">
+                        <div class="imagensEditor">
+                            <img src="imagens/Ellipse 1.png" alt="">
+                            <img src="imagens/Ellipse 2.png" alt="">
+                            <img src="imagens/Ellipse 3.png" alt="">
+                        </div>
+
+                        <textarea name="" id="" cols="30" rows="10"></textarea>
+                    </div>
+                    <div class="comentarios">
+                        <div class="emoteMargin">aaaa</div>
+
+                        <h2>Titulo</h2>
+
+                        <p>Descrição</p>
+
+                        <div class="emotes" data-form4 >
+                            <div class="balaoLikes">
+                                <div class="emotinhos">
+                                    <img src="imagens/balao.svg" alt="">
+                                    <p class="paragrafoMagico" >9</p>
+                                </div>
+                                <div class="emotinhos2">
+                                    <img src="imagens/likes.svg" alt="" data-like onclick="changeColor()">
+                                    <p >8</p>
+                                </div>
+                            </div>
+                            <div class="fotoPerfil">
+                                <img src="imagens/Photo.png" alt="">
+                                <p>Harry</p>
+                            </div>
+                        </div>
+                    </div>
+                    
+                </div>
+            </div>
+
+            
+        </div>
+        <script>
+
+            function fecharJanela1(){
+                document.querySelector("[data-form]").style.display="none"
+            }
+            function abrirJanela1(){
+                document.querySelector("[data-form]").style.display="flex"
+            }
+
+            function fecharJanela2(){
+                document.querySelector("[data-form2]").style.display="none"
+            }
+            function abrirJanela2(){
+                document.querySelector("[data-form2]").style.display="flex"
+            }
+
+            function fecharJanela3(){
+                document.querySelector("[data-form3]").style.display="none"
+            }
+            function abrirJanela3(){
+                document.querySelector("[data-form3]").style.display="flex"
+            }
+
+            function fecharJanela4(){
+                document.querySelector("[data-form4]").style.display="none"
+            }
+            function abrirJanela4(){
+                document.querySelector("[data-form4]").style.display="flex"
+            }
+
+            function changeColor(){
+                let like = document.querySelector("[data-like]")
+
+                if (like.src = "imagens/likes.svg"){
+                    like.setAttribute('src', "imagens/likesVermelhos.svg")
+        }           else{
+                        like.setAttribute('src', "imagens/likes.svg")
+        }
+    }
+        </script>
+    </main>
+</body>
+</html>

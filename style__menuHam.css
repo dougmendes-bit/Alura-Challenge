@@ -1,0 +1,57 @@
+
+.menu__ham{
+    width: 50%;
+    background: rgba(45, 65, 91, 1);
+    height: 600px;
+    position: fixed;
+    transform: translateX(300%);
+    border-radius: 9px;
+    transition: 0.5s;
+}
+
+.menu__ham hr{
+    width: 80%;
+    margin: 0 auto;
+    margin-bottom: 5%;
+    margin-top: 5%;
+}
+
+.menu__ham ul{
+    list-style: none;
+    margin-top: 5%;
+
+}
+.menu__ham li a{
+    text-decoration: none;
+    color: white;
+    display: flex;
+    align-items: center;
+
+}
+
+.menu__ham li{
+    padding: 10px;
+}
+
+.menu__ham p{
+    color: white;
+    margin-left: 5%;
+}
+
+.showMe{
+    transform: translateX(80%);   
+}
+
+.menuIconess{
+    padding: 10px;
+    background: rgba(80, 129, 251, 1);
+    border-radius: 9px;
+    margin-right: 5%;
+}
+
+.menu__ham__fotoPerfil{
+    margin-top: 10%;
+    display: flex;
+    margin-left: 5%;
+    align-items: center;
+}
